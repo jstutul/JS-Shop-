@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block main %}
+<!-- signup start -->
+<section id="signup-section">
+      <div class="col-md-6 offset-md-3">
+        <h4 class="signup-title">SIGN UP</h4>
+        <div class="signup-form">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="e-mail">Email Address</label>
+                <input type="text" class="form-control" id="e-mail" placeholder="Input your Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastname">Full Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Input your Last Name">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input type="number" class="form-control" id="password" placeholder="Enter your Password">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="ConfirPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="ConfirPassword" placeholder="Confirm your Password">
+              </div>
+
+              <div class="form-group signupbtn d-flex">
+                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="0">
+                <button class="btn btn-flat" data-loading-text="Please wait">SIgn Up</button>
+                <p>Already have an account?<a href="#">Sign In</a></p>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+      </div>
+        <div class="mx-auto col-lg-6">
+            <div class="my-2">
+                <h3>Signup OR Login with </h3>
+            </div>
+            <div class="row px-2">
+                <div class="col">
+                 <button class="btn btn-primary">Login With Email</button>
+                </div>
+                <div class="col">
+                   <button class="btn btn-primary">Login With Facebook</button>
+                </div>
+              </div>
+        </div>
+    </section>
+<!-- signup end-->
+{% endblock %}
